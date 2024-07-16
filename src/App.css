@@ -1,0 +1,31 @@
+.front {
+  background-image: url("./assets/hompageImg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  font-size: 3rem;
+}
+.medi {
+  animation-name: flipmedicine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flipmedicine {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -50px);
+  }
+
+  75% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
