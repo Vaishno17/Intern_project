@@ -11,7 +11,7 @@ const Navbar = (props) => {
     }
 
     return (
-        <div className=' w-full h-24 bg-white shadow-md shadow-slate-200 rounded-md  flex items-center justify-between px-20'>
+        <div className=' fixed z-50 w-full h-24 bg-white shadow-md shadow-slate-200 rounded-md  flex items-center justify-between px-20'>
             <div onClick={()=> props.sendtab("home")} className=' cursor-pointer w-1/12 '>
                <img src={logo} className=' w-11/12' />
             </div>

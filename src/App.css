@@ -11,6 +11,41 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+.fronttext::after{
+   content: "|";
+   position: absolute;
+   right: 50px ;
+   color: #cbd5e1;
+   width:100%;
+   background-color: #cbd5e1;
+   animation: typing 3s steps(20) alternate infinite;
+}
+
+
+.trust {
+    position: relative;
+}
+.trust::after {
+   content: "|";
+   position: absolute;
+   right:0;
+   color: rgb(255, 255, 255);
+   width: 100%;
+   background-color: white;
+   animation: typeWriter 3s steps(20) alternate infinite;
+}
+
+@keyframes typeWriter {
+    to{
+        width: 0%;
+    }
+}
+
+@keyframes typing {
+    to{
+        width: 0%;
+    }
+}
 
 @keyframes flipmedicine {
   0% {

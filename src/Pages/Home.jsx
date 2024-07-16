@@ -7,11 +7,11 @@ import test from "../assets/ut.jpeg";
 const Home = () => {
     return (
         <div className=' h-fit min-h-screen w-fit border-2 border-gray-950'>
-            <div className='front w-full  relative z-50 p-72'>
-                <p className='absolute shadow-xl shadow-slate-800 text-sm md:text-2xl sm:text-lg text-wrap top-60 lg:top-72 p-7 left-0 lg:right-96 text-slate-900 font-medium rounded-br-full z-0 bg-slate-300'>Welcome to Evaluxe Pharmaceuticals, Empowering Health, Enriching Lives</p>
+            <div className='front w-full top-5  relative z-40 p-72'>
+                <p className=' absolute shadow-xl shadow-slate-800 text-sm md:text-2xl sm:text-lg text-wrap top-60 lg:top-72 p-8 left-0 lg:right-96 text-slate-900 font-medium rounded-br-full z-0 bg-slate-300'><p className='fronttext w-11/12'>Welcome to Evaluxe Pharmaceuticals, Empowering Health, Enriching Lives</p></p>
             </div>
-            <div className=' lg:w-full w-full flex flex-col lg:flex-row relative p-7 pb-14 bg-slate-700 '>
-                <p className=' z-50 text-opacity-80 rounded-full p-14 bg-slate-700 text-white text-3xl w-full lg:w-1/2 lg:absolute'>At Evaluxe Pharmaceuticals, we are driven by a profound commitment to
+            <div className=' lg:w-full w-full flex flex-col lg:flex-row relative pt-14 p-7 pb-14 bg-slate-700 '>
+                <p className=' z-40 text-opacity-80 rounded-full p-14 bg-slate-700 text-white text-3xl w-full lg:w-1/2 lg:absolute'>At Evaluxe Pharmaceuticals, we are driven by a profound commitment to
                     pioneering breakthrough medicines that significantly improve the lives of
                     patients worldwide. Through relentless scientific innovation and a steadfast
                     dedication to enhancing healthcare outcomes, we aim to address unmet medical
@@ -48,6 +48,9 @@ const Home = () => {
                         we earn the trust of healthcare professionals and patients alike.
                     </p>
                 </div>
+
+                <h1 className=' text-6xl text-pretty pl-28 pt-20 pb-4'>Trusted by</h1>
+                <p className='trust text-4xl text-center pb-10'>600 + doctors and 10000+ patients</p>
             </div>
         </div>
     );
