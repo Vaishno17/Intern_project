@@ -3,11 +3,16 @@ import { useState } from 'react'
 import logo from "../assets/logo.jpg";
 
 const Navbar = (props) => {
-    const [searchtb, setSearchTab] = useState(false);
+    // const [searchtb, setSearchTab] = useState(false);
+    const [list, setList] = useState(true);
     console.log(props.sendtab);
 
     const SerachFn = () => {
         setSearchTab(prev => !prev)
+    }
+
+    const ShowOption = () => {
+
     }
 
     return (
@@ -17,12 +22,12 @@ const Navbar = (props) => {
             </div>
             <div className=' flex w-7/12 items-center justify-between '>
                 {
-                    searchtb ?
-                        <div className=' w-full gap-4 flex'>
-                            <input type='search' placeholder=' Search here...' className=' p-2 bg-slate-100 border-2 border-black w-8/12 h-10 rounded-md'/> 
-                            <button className=' bg-emerald-500 pl-3 pr-3 rounded-lg text-lg text-neutral-50'>Search</button>
-                        </div>
-                        : <div className=' flex w-10/12 items-center p-2 justify-between '>
+                    // searchtb ?
+                    //     <div className=' w-full gap-4 flex'>
+                    //         <input type='search' placeholder=' Search here...' className=' p-2 bg-slate-100 border-2 border-black w-8/12 h-10 rounded-md'/> 
+                    //         <button className=' bg-emerald-500 pl-3 pr-3 rounded-lg text-lg text-neutral-50'>Search</button>
+                    //     </div>:
+                         <div className=' hidden lg:flex w-10/12 items-center p-2 justify-between '>
                             <a href="#" onClick={()=> props.sendtab("About")}  className="tab text-lg font-semibold hover:text-green-500  hover:underline underline-offset-8">About Us</a>
                             <a href="#" onClick={()=> props.sendtab("products")} className="tab text-lg font-semibold hover:text-green-500 hover:underline underline-offset-8">Products</a>
                             <a href="#" onClick={()=> props.sendtab("trusted")} className="tab text-lg font-semibold hover:text-green-500 hover:underline underline-offset-8">Trusted By</a>
@@ -31,13 +36,20 @@ const Navbar = (props) => {
                         </div>
                 }
 
-                <div className=' cursor-pointer font-semibold text-2xl text-cyan-700' onClick={SerachFn}>
-                    {
-                        searchtb === true ? <i class="fa-solid fa-xmark"></i> : <i class="fa-solid fa-magnifying-glass"></i>
-                    }
+                <div onClick={ShowOption} className='flex lg:hidden'>
+                <i class="fa-solid fa-bars"></i>
+                </div>
+                <div>
+
                 </div>
 
-
+                <div className=' cursor-pointer lg:ml-10 font-semibold text-2xl flex items-center justify-center gap-2 hover:border-b-2 hover:border-gray-950' onClick={SerachFn}>
+                    {/* {
+                        searchtb === true ? <i class="fa-solid fa-xmark"></i> : <i class="fa-solid fa-magnifying-glass"></i>
+                    } */}
+                    <i class="fa-solid fa-user"></i>
+                    <div>SignIn</div>
+                </div>
             </div>
         </div>
     )
