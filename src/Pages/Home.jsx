@@ -1,6 +1,6 @@
 import React from 'react';
 import infoImg from "../assets/abouts.jpeg";
-import medicine from "../assets/medicine.jpg";
+import medicine from "../assets/medicine.png";
 import medi from "../assets/medicine2.jpeg";
 import test from "../assets/ut.jpeg";
 
@@ -28,7 +28,7 @@ const Home = () => {
                         medical research and translating our discoveries into impactful
                         therapies that empower patients to live healthier, fuller lives.
                     </p>
-                    <img src={medicine} className=' medi lg:w-5/12 w-full lg:h-full' />
+                    <img src={medicine} className=' medi lg:w-8/12 w-full lg:h-full' />
                 </div>
             </div>
             <div className=' pt-10 w-full h-fit'>
@@ -47,7 +47,6 @@ const Home = () => {
                         we earn the trust of healthcare professionals and patients alike.
                     </p>
                 </div>
-
                 <h1 className=' text-6xl text-pretty pl-28 pt-20 pb-4 font-mono italic text-red-950'>Trusted by</h1>
                 <p className='trust text-4xl text-center pb-10 font-mono italic text-orange-800'>600 + doctors and 10000+ patients</p>
             </div>
