@@ -145,7 +145,14 @@
     margin-bottom: 10px;
   }
 }
+/* Sign page hover effect */
+.imghover{
+  transition: transform 0.3s;
+}
 
+.imghover:hover{
+  transform: scale(1.1);
+}
 
 /* Global reach css */
 
